@@ -1,0 +1,6 @@
+framework module Pods_WhatIsUpUITests {
+  umbrella header "Pods-WhatIsUpUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
