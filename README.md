@@ -3,11 +3,11 @@
 
 ## Features
 
-* Explore events around your location
-* Save favorite places - home, work, neighborhood, etc - to keep posted
-* Search postings using event types
-* Take an instant photo using camera to share
-* Anonymous user setting to generate causual interacations
+- [ ] Explore events around your location on Google Maps
+- [ ] Save favorite places - home, work, neighborhood, etc - or users to keep posted
+- [ ] Search postings using event types
+- [ ] Take a photo or select a photo from library to post with message
+- [ ] Anonymous user setting for casual interacations among users
 
 ## Requirements
 
