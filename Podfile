@@ -8,6 +8,10 @@ target 'WhatIsUp' do
   pod 'GooglePlaces'
   pod 'GooglePlacePicker'
   pod 'GoogleMaps'
+  
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
 
   target 'WhatIsUpTests' do
     inherit! :search_paths
