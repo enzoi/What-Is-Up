@@ -16,6 +16,7 @@
 		CF59E46320341F9B00961821 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF59E46120341F9B00961821 /* LaunchScreen.storyboard */; };
 		CF59E46E20341F9B00961821 /* WhatIsUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59E46D20341F9B00961821 /* WhatIsUpTests.swift */; };
 		CF59E47920341F9B00961821 /* WhatIsUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59E47820341F9B00961821 /* WhatIsUpUITests.swift */; };
+		CFA64885203BCA7E004E87AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA64884203BCA7E004E87AF /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		CF59E47420341F9B00961821 /* WhatIsUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatIsUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF59E47820341F9B00961821 /* WhatIsUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsUpUITests.swift; sourceTree = "<group>"; };
 		CF59E47A20341F9B00961821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFA64884203BCA7E004E87AF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DC85B73EE3097825732CF45C /* Pods-WhatIsUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatIsUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatIsUp/Pods-WhatIsUp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 				CF59E45F20341F9B00961821 /* Assets.xcassets */,
 				CF59E46120341F9B00961821 /* LaunchScreen.storyboard */,
 				CF59E46420341F9B00961821 /* Info.plist */,
+				CFA64884203BCA7E004E87AF /* Constants.swift */,
 			);
 			path = WhatIsUp;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 			files = (
 				CF59E45B20341F9B00961821 /* MapController.swift in Sources */,
 				CF59E45920341F9B00961821 /* AppDelegate.swift in Sources */,
+				CFA64885203BCA7E004E87AF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,6 +699,7 @@
 				CF59E47F20341F9B00961821 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF59E48020341F9B00961821 /* Build configuration list for PBXNativeTarget "WhatIsUpTests" */ = {
 			isa = XCConfigurationList;
@@ -703,6 +708,7 @@
 				CF59E48220341F9B00961821 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF59E48320341F9B00961821 /* Build configuration list for PBXNativeTarget "WhatIsUpUITests" */ = {
 			isa = XCConfigurationList;
@@ -711,6 +717,7 @@
 				CF59E48520341F9B00961821 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

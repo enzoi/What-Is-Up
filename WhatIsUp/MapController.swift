@@ -10,7 +10,7 @@ import UIKit
 import GoogleMaps
 
 class MapController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
