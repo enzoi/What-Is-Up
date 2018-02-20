@@ -12,10 +12,12 @@
 		71F7275979A2197CBD948DBB /* Pods_WhatIsUpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F6BE9F1FE322AF63983669 /* Pods_WhatIsUpUITests.framework */; };
 		CF59E45920341F9B00961821 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59E45820341F9B00961821 /* AppDelegate.swift */; };
 		CF59E45B20341F9B00961821 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59E45A20341F9B00961821 /* MapController.swift */; };
-		CF59E46020341F9B00961821 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF59E45F20341F9B00961821 /* Assets.xcassets */; };
 		CF59E46320341F9B00961821 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF59E46120341F9B00961821 /* LaunchScreen.storyboard */; };
 		CF59E46E20341F9B00961821 /* WhatIsUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59E46D20341F9B00961821 /* WhatIsUpTests.swift */; };
 		CF59E47920341F9B00961821 /* WhatIsUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59E47820341F9B00961821 /* WhatIsUpUITests.swift */; };
+		CF755A4A203BEA9900EC9D95 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF755A49203BEA9900EC9D95 /* SignupController.swift */; };
+		CF755A4D203BEAF500EC9D95 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF755A4C203BEAF500EC9D95 /* Extensions.swift */; };
+		CF755A54203BFD3E00EC9D95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF755A53203BFD3E00EC9D95 /* Assets.xcassets */; };
 		CFA64885203BCA7E004E87AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA64884203BCA7E004E87AF /* Constants.swift */; };
 		CFA64887203BD023004E87AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFA64886203BD023004E87AF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
@@ -49,7 +51,6 @@
 		CF59E45520341F9B00961821 /* WhatIsUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatIsUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF59E45820341F9B00961821 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF59E45A20341F9B00961821 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
-		CF59E45F20341F9B00961821 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF59E46220341F9B00961821 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF59E46420341F9B00961821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF59E46920341F9B00961821 /* WhatIsUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatIsUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +59,9 @@
 		CF59E47420341F9B00961821 /* WhatIsUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatIsUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF59E47820341F9B00961821 /* WhatIsUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsUpUITests.swift; sourceTree = "<group>"; };
 		CF59E47A20341F9B00961821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF755A49203BEA9900EC9D95 /* SignupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
+		CF755A4C203BEAF500EC9D95 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CF755A53203BFD3E00EC9D95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFA64884203BCA7E004E87AF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CFA64886203BD023004E87AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DC85B73EE3097825732CF45C /* Pods-WhatIsUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatIsUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatIsUp/Pods-WhatIsUp.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,11 +121,13 @@
 			isa = PBXGroup;
 			children = (
 				CF59E45820341F9B00961821 /* AppDelegate.swift */,
-				CF59E45A20341F9B00961821 /* MapController.swift */,
-				CF59E45F20341F9B00961821 /* Assets.xcassets */,
-				CF59E46120341F9B00961821 /* LaunchScreen.storyboard */,
-				CF59E46420341F9B00961821 /* Info.plist */,
 				CFA64884203BCA7E004E87AF /* Constants.swift */,
+				CF755A4B203BEAC700EC9D95 /* Utils */,
+				CF755A48203BEA8A00EC9D95 /* Login */,
+				CF755A50203BEBEE00EC9D95 /* Map */,
+				CF59E46120341F9B00961821 /* LaunchScreen.storyboard */,
+				CF755A53203BFD3E00EC9D95 /* Assets.xcassets */,
+				CF59E46420341F9B00961821 /* Info.plist */,
 				CFA64886203BD023004E87AF /* GoogleService-Info.plist */,
 			);
 			path = WhatIsUp;
@@ -143,6 +149,30 @@
 				CF59E47A20341F9B00961821 /* Info.plist */,
 			);
 			path = WhatIsUpUITests;
+			sourceTree = "<group>";
+		};
+		CF755A48203BEA8A00EC9D95 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CF755A49203BEA9900EC9D95 /* SignupController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		CF755A4B203BEAC700EC9D95 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CF755A4C203BEAF500EC9D95 /* Extensions.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		CF755A50203BEBEE00EC9D95 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				CF59E45A20341F9B00961821 /* MapController.swift */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 		D8D2068A07D06C81E7A51F45 /* Frameworks */ = {
@@ -288,8 +318,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFA64887203BD023004E87AF /* GoogleService-Info.plist in Resources */,
+				CF755A54203BFD3E00EC9D95 /* Assets.xcassets in Resources */,
 				CF59E46320341F9B00961821 /* LaunchScreen.storyboard in Resources */,
-				CF59E46020341F9B00961821 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,9 +482,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF755A4D203BEAF500EC9D95 /* Extensions.swift in Sources */,
 				CF59E45B20341F9B00961821 /* MapController.swift in Sources */,
 				CF59E45920341F9B00961821 /* AppDelegate.swift in Sources */,
 				CFA64885203BCA7E004E87AF /* Constants.swift in Sources */,
+				CF755A4A203BEA9900EC9D95 /* SignupController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

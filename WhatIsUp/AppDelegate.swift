@@ -23,9 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         window?.makeKeyAndVisible()
-        let vc = MapController()
-        let navController = UINavigationController(rootViewController: vc)
-        window?.rootViewController = navController
+        window?.rootViewController = SignupController()
         
         return true
     }
