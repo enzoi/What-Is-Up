@@ -10,6 +10,8 @@
 		02386CF1FB6C6C885C1F0064 /* Pods_WhatIsUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA05E188F3A20FE783F5C47 /* Pods_WhatIsUp.framework */; };
 		6DEB5516492EDEB036EA6645 /* Pods_WhatIsUpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5493613F237808741020D3D2 /* Pods_WhatIsUpTests.framework */; };
 		71F7275979A2197CBD948DBB /* Pods_WhatIsUpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F6BE9F1FE322AF63983669 /* Pods_WhatIsUpUITests.framework */; };
+		CF0C7D632059F3F600FF8EBE /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0C7D622059F3F600FF8EBE /* LoginController.swift */; };
+		CF0C7D672059FFE900FF8EBE /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0C7D662059FFE900FF8EBE /* MainTabBarController.swift */; };
 		CF59E45920341F9B00961821 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59E45820341F9B00961821 /* AppDelegate.swift */; };
 		CF59E45B20341F9B00961821 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59E45A20341F9B00961821 /* MapController.swift */; };
 		CF59E46320341F9B00961821 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF59E46120341F9B00961821 /* LaunchScreen.storyboard */; };
@@ -48,6 +50,8 @@
 		91C08FCF46518F4FA4850AE5 /* Pods-WhatIsUpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatIsUpUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatIsUpUITests/Pods-WhatIsUpUITests.release.xcconfig"; sourceTree = "<group>"; };
 		95F6BE9F1FE322AF63983669 /* Pods_WhatIsUpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatIsUpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF3BAF6E5C78D8352304B2C /* Pods-WhatIsUpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatIsUpUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatIsUpUITests/Pods-WhatIsUpUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF0C7D622059F3F600FF8EBE /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		CF0C7D662059FFE900FF8EBE /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		CF59E45520341F9B00961821 /* WhatIsUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatIsUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF59E45820341F9B00961821 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF59E45A20341F9B00961821 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 			children = (
 				CF59E45820341F9B00961821 /* AppDelegate.swift */,
 				CFA64884203BCA7E004E87AF /* Constants.swift */,
+				CF0C7D662059FFE900FF8EBE /* MainTabBarController.swift */,
 				CF755A4B203BEAC700EC9D95 /* Utils */,
 				CF755A48203BEA8A00EC9D95 /* Login */,
 				CF755A50203BEBEE00EC9D95 /* Map */,
@@ -155,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				CF755A49203BEA9900EC9D95 /* SignupController.swift */,
+				CF0C7D622059F3F600FF8EBE /* LoginController.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -281,12 +287,14 @@
 					CF59E46820341F9B00961821 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = TVHJ8VSCRK;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CF59E45420341F9B00961821;
 					};
 					CF59E47320341F9B00961821 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = TVHJ8VSCRK;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CF59E45420341F9B00961821;
 					};
@@ -528,6 +536,8 @@
 				CF755A4D203BEAF500EC9D95 /* Extensions.swift in Sources */,
 				CF59E45B20341F9B00961821 /* MapController.swift in Sources */,
 				CF59E45920341F9B00961821 /* AppDelegate.swift in Sources */,
+				CF0C7D672059FFE900FF8EBE /* MainTabBarController.swift in Sources */,
+				CF0C7D632059F3F600FF8EBE /* LoginController.swift in Sources */,
 				CFA64885203BCA7E004E87AF /* Constants.swift in Sources */,
 				CF755A4A203BEA9900EC9D95 /* SignupController.swift in Sources */,
 			);
@@ -722,7 +732,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ytk.WhatIsUpTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatIsUp.app/WhatIsUp";
 			};
 			name = Debug;
@@ -738,7 +749,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ytk.WhatIsUpTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatIsUp.app/WhatIsUp";
 			};
 			name = Release;
@@ -753,7 +765,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ytk.WhatIsUpUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = WhatIsUp;
 			};
 			name = Debug;
@@ -768,7 +781,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ytk.WhatIsUpUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = WhatIsUp;
 			};
 			name = Release;
