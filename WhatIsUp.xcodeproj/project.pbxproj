@@ -12,6 +12,7 @@
 		71F7275979A2197CBD948DBB /* Pods_WhatIsUpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F6BE9F1FE322AF63983669 /* Pods_WhatIsUpUITests.framework */; };
 		CF0C7D632059F3F600FF8EBE /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0C7D622059F3F600FF8EBE /* LoginController.swift */; };
 		CF0C7D672059FFE900FF8EBE /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0C7D662059FFE900FF8EBE /* MainTabBarController.swift */; };
+		CF0C7D69205A538C00FF8EBE /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = CF0C7D68205A538C00FF8EBE /* style.json */; };
 		CF59E45920341F9B00961821 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59E45820341F9B00961821 /* AppDelegate.swift */; };
 		CF59E45B20341F9B00961821 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59E45A20341F9B00961821 /* MapController.swift */; };
 		CF59E46320341F9B00961821 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF59E46120341F9B00961821 /* LaunchScreen.storyboard */; };
@@ -52,6 +53,7 @@
 		BEF3BAF6E5C78D8352304B2C /* Pods-WhatIsUpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatIsUpUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatIsUpUITests/Pods-WhatIsUpUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CF0C7D622059F3F600FF8EBE /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		CF0C7D662059FFE900FF8EBE /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		CF0C7D68205A538C00FF8EBE /* style.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = style.json; sourceTree = "<group>"; };
 		CF59E45520341F9B00961821 /* WhatIsUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatIsUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF59E45820341F9B00961821 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF59E45A20341F9B00961821 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				CF59E45A20341F9B00961821 /* MapController.swift */,
+				CF0C7D68205A538C00FF8EBE /* style.json */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				CFA64887203BD023004E87AF /* GoogleService-Info.plist in Resources */,
 				CF755A54203BFD3E00EC9D95 /* Assets.xcassets in Resources */,
 				CF59E46320341F9B00961821 /* LaunchScreen.storyboard in Resources */,
+				CF0C7D69205A538C00FF8EBE /* style.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
