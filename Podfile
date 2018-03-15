@@ -15,12 +15,16 @@ target 'WhatIsUp' do
 
   target 'WhatIsUpTests' do
     inherit! :search_paths
-    # Pods for testing
+    pod 'Firebase/Auth'
+    pod 'Firebase/Database'
+    pod 'Firebase/Storage'
   end
 
   target 'WhatIsUpUITests' do
     inherit! :search_paths
-    # Pods for testing
+    pod 'Firebase/Auth'
+    pod 'Firebase/Database'
+    pod 'Firebase/Storage'
   end
 
 end

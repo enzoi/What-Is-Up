@@ -23,7 +23,7 @@ class SignupController: UIViewController, UIImagePickerControllerDelegate, UINav
         return button
     }()
     
-    func handlePlusPhoto() {
+    @objc func handlePlusPhoto() {
         let imagePickerController = UIImagePickerController()
         imagePickerController.delegate = self
         imagePickerController.allowsEditing = true
@@ -54,8 +54,8 @@ class SignupController: UIViewController, UIImagePickerControllerDelegate, UINav
         return tf
     }()
     
-    func handleTextInputChange() {
-        let isFormValid = emailTextField.text?.characters.count ?? 0 > 0 && usernameTextField.text?.characters.count ?? 0 > 0 && passwordTextField.text?.characters.count ?? 0 > 0
+    @objc func handleTextInputChange() {
+        let isFormValid = emailTextField.text?.count ?? 0 > 0 && usernameTextField.text?.count ?? 0 > 0 && passwordTextField.text?.count ?? 0 > 0
         
         if isFormValid {
             signUpButton.isEnabled = true
@@ -101,10 +101,10 @@ class SignupController: UIViewController, UIImagePickerControllerDelegate, UINav
         return button
     }()
     
-    func handleSignUp() {
-        guard let email = emailTextField.text, email.characters.count > 0 else { return }
-        guard let username = usernameTextField.text, username.characters.count > 0 else { return }
-        guard let password = passwordTextField.text, password.characters.count > 0 else { return }
+    @objc func handleSignUp() {
+        guard let email = emailTextField.text, email.count > 0 else { return }
+        guard let username = usernameTextField.text, username.count > 0 else { return }
+        guard let password = passwordTextField.text, password.count > 0 else { return }
     
         Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
             
@@ -154,9 +154,9 @@ class SignupController: UIViewController, UIImagePickerControllerDelegate, UINav
         let button = UIButton(type: .system)
         
         let attributedTitle = NSMutableAttributedString(string: "Already have an account?   ",
-                                                        attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 14), NSForegroundColorAttributeName: UIColor.lightGray])
+                                                        attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 14), NSAttributedStringKey.foregroundColor: UIColor.lightGray])
         
-        attributedTitle.append(NSAttributedString(string: "Sign In", attributes: [NSFontAttributeName: UIFont.boldSystemFont(ofSize: 14), NSForegroundColorAttributeName: UIColor.signUpEnabled]))
+        attributedTitle.append(NSAttributedString(string: "Sign In", attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 14), NSAttributedStringKey.foregroundColor: UIColor.signUpEnabled]))
         
         button.setAttributedTitle(attributedTitle, for: .normal)
         
@@ -164,7 +164,7 @@ class SignupController: UIViewController, UIImagePickerControllerDelegate, UINav
         return button
     }()
     
-    func handleAlreadyHaveAccount() {
+    @objc func handleAlreadyHaveAccount() {
         navigationController?.popViewController(animated: true)
     }
     
